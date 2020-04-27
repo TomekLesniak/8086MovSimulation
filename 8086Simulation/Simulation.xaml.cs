@@ -18,12 +18,13 @@ namespace _8086Simulation
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Simulation : Window
     {
         // Content of registers
         private string AX, BX, CX, DX;
+
         private string destination, source, command;
-        public MainWindow()
+        public Simulation()
         {
             InitializeComponent();
             AX = "";
@@ -41,7 +42,7 @@ namespace _8086Simulation
                 var split = fullCommand.Split(' ');
 
                 command = split[0];
-                destination = split[1].Remove(2, 1);
+                destination = split[1].Remove(2, 1); //remove ","
                 source = split[2];
 
                 var bSourceIsRegister = IsSourceARegister();
@@ -75,7 +76,7 @@ namespace _8086Simulation
 
         private void MovRegisterToRegister()
         {
-            string contentToCopy = "";
+            string contentToCopy = ""; //value of register to be copied
             switch (source)
             {
                 case "AX":
@@ -130,6 +131,7 @@ namespace _8086Simulation
             UpdateRegisters();
         }
 
+        // Refresh values of all registers.
         private void UpdateRegisters()
         {
             this.AxTextBlock.Text = AX;
