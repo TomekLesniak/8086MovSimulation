@@ -22,7 +22,7 @@
                    Style="{StaticResource RegisterNamesStyle}" 
                    Margin="20 0 0 0"/>
         <TextBlock Grid.Row="0" Grid.Column="0" x:Name="AxTextBlock"
-                   Text="" Width="90" Height="auto"
+                   Text="" Width="110" Height="auto"
                    Margin="0 0 20 0"
                    Foreground="white"
                    HorizontalAlignment="Right" VerticalAlignment="Center"
@@ -32,7 +32,7 @@
                    Style="{StaticResource RegisterNamesStyle}"
                    Margin="20 0 0 0"/>
         <TextBlock Grid.Row="0" Grid.Column="1" x:Name="BxTextBlock"
-                   Text="" Width="90" Height="auto" 
+                   Text="" Width="110" Height="auto" 
                    Margin="0 0 20 0"
                    Foreground="White"
                    HorizontalAlignment="Right" VerticalAlignment="Center"
@@ -41,7 +41,7 @@
                    Style="{StaticResource RegisterNamesStyle}"
                    Margin="20 0 0 0"/>
         <TextBlock Grid.Row="1" Grid.Column="0" x:Name="CxTextBlock"
-                   Text="" Width="90" Height="auto" 
+                   Text="" Width="110" Height="auto" 
                    Margin="0 0 20 0"
                    Foreground="White"
                    HorizontalAlignment="Right" VerticalAlignment="Center"
@@ -50,13 +50,13 @@
                    Style="{StaticResource RegisterNamesStyle}"
                    Margin="20 0 0 0"/>
         <TextBlock Grid.Row="1" Grid.Column="1" x:Name="DxTextBlock"
-                   Text="" Width="90" Height="auto" 
+                   Text="" Width="110" Height="auto" 
                    Margin="0 0 20 0"
                    Foreground="White"
                    HorizontalAlignment="Right" VerticalAlignment="Center"
                    FontSize="30" TextAlignment="Center" />
         <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="0" Orientation="Horizontal">
-            <TextBlock Text="C:// " Foreground="Green" FontSize="20"
+            <TextBlock Text=" " Foreground="Green" FontSize="20"
                        Height="auto" VerticalAlignment="Center" TextAlignment="Center"
                        HorizontalAlignment="Center"/>
             <TextBox Background="Black"
